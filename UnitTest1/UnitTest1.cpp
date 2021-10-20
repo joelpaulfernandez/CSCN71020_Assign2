@@ -46,9 +46,9 @@ namespace UnitTest1
 		TEST_METHOD(WidthFunction2)
 		{
 			int result = 0;
-			int w = 1;
+			int w = 66;
 			setWidth(w, &result);
-			Assert::AreEqual(1, result);
+			Assert::AreEqual(66, result);
 
 
 
@@ -57,24 +57,13 @@ namespace UnitTest1
 		TEST_METHOD(WidthFunction3)
 		{
 			int result = 0;
-			int w = 25;
+			int w = 1;
 			setWidth(w, &result);
-			Assert::AreEqual(25, result);
+			Assert::AreEqual(1, result);
 
 
 		}
 		TEST_METHOD(LengthFunction1)
-		{
-			int result = 0;
-			int l = 99;
-			setLength(l, &result);
-			Assert::AreEqual(99, result);
-
-
-
-
-		}
-		TEST_METHOD(LengthFunction2)
 		{
 			int result = 0;
 			int l = 1;
@@ -85,12 +74,23 @@ namespace UnitTest1
 
 
 		}
-		TEST_METHOD(LengthFunction3)
+		TEST_METHOD(LengthFunction2)
 		{
 			int result = 0;
 			int l = 25;
 			setLength(l, &result);
 			Assert::AreEqual(25, result);
+
+
+
+
+		}
+		TEST_METHOD(LengthFunction3)
+		{
+			int result = 0;
+			int l = 99;
+			setLength(l, &result);
+			Assert::AreEqual(99, result);
 
 
 
