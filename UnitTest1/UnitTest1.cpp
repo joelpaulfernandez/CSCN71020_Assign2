@@ -63,6 +63,39 @@ namespace UnitTest1
 
 
 		}
+		TEST_METHOD(LengthFunction1)
+		{
+			int result = 0;
+			int l = 99;
+			setLength(l, &result);
+			Assert::AreEqual(99, result);
+
+
+
+
+		}
+		TEST_METHOD(LengthFunction2)
+		{
+			int result = 0;
+			int l = 1;
+			setLength(l, &result);
+			Assert::AreEqual(1, result);
+
+
+
+
+		}
+		TEST_METHOD(LengthFunction3)
+		{
+			int result = 0;
+			int l = 25;
+			setLength(l, &result);
+			Assert::AreEqual(25, result);
+
+
+
+
+		}
 
 
 
