@@ -32,7 +32,37 @@ namespace UnitTest1
 			Assert::AreEqual(900, result);
 
 		}
+		TEST_METHOD(WidthFunction1)
+		{
+			int result = 0;
+			int w = 99;
+			setWidth(w, &result);
+			Assert::AreEqual(99, result);
 
+
+
+
+		}
+		TEST_METHOD(WidthFunction2)
+		{
+			int result = 0;
+			int w = 1;
+			setWidth(w, &result);
+			Assert::AreEqual(1, result);
+
+
+
+
+		}
+		TEST_METHOD(WidthFunction3)
+		{
+			int result = 0;
+			int w = 25;
+			setWidth(w, &result);
+			Assert::AreEqual(25, result);
+
+
+		}
 
 
 
