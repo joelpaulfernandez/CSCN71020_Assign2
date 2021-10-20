@@ -24,7 +24,14 @@ namespace UnitTest1
 
 
 		}
-		
+		TEST_METHOD(AreaFunction)
+		{
+			int result = 0;
+			int l = 45, b = 20;
+			result = getArea(&l, &b);
+			Assert::AreEqual(900, result);
+
+		}
 
 
 
